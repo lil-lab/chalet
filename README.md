@@ -9,10 +9,7 @@ Code will be released soon. Send an email to Dipendra Misra (dkm@cs.cornell.edu)
 <a href="https://youtu.be/EpGS5606rn8">Demo 2</a>
 <a href="https://youtu.be/KAPyvdT05B0">Demo 3</a>
 
-
 <p align="center"><img src="http://s1cyan.github.io/images/ctech/dresserdrawer.gif"></p>
-
-<p align="center"><img src="http://s1cyan.github.io/images/ctech/cabinetglass.gif"></p>
 
 <p align="center"><img src="http://s1cyan.github.io/images/ctech/fridge.gif"></p>
 
