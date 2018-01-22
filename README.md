@@ -4,6 +4,9 @@ CHALET is a 3D house simulator with support for navigation and manipulation. Unl
 
 Code will be released soon. Send an email to Dipendra Misra (dkm@cs.cornell.edu) for more information.
 
+## Live Demo: 
+Available Soon
+
 ## Youtube Demos: 
 <a href="https://youtu.be/FBirx-10JPE">Demo 1</a>
 <a href="https://youtu.be/EpGS5606rn8">Demo 2</a>
