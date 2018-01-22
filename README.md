@@ -14,6 +14,3 @@ Code will be released soon. Send an email to Dipendra Misra (dkm@cs.cornell.edu)
 <p align="center"><img src="http://s1cyan.github.io/images/ctech/fridge.gif"></p>
 
 <p align="center"><img src="http://s1cyan.github.io/images/ctech/sink.gif"></p>
-
-<p align="center"><img src="http://s1cyan.github.io/images/ctech/ovengif.gif"></p>
-
