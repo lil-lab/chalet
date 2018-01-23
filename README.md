@@ -7,6 +7,14 @@ Code will be released soon. Send an email to Dipendra Misra (dkm@cs.cornell.edu)
 ## Live Demo: 
 Available Soon
 
+## Project:
+_Developers_: Claudia Yan and Dipendra Misra
+
+_Researchers_: Dipendra Misra, Andrew Bennett, Aaron Walsman, Yonatan Bisk and Yoav Artzi
+
+## Publication:
+1) CHALET: Cornell House Agent Learning Environment, _Claudia Yan, Dipendra Misra, Andrew Bennett, Aaron Walsman, Yonatan Bisk and Yoav Artzi_, arXiv report 2018
+
 ## Youtube Demos: 
 <a href="https://youtu.be/FBirx-10JPE">Demo 1</a>
 <a href="https://youtu.be/EpGS5606rn8">Demo 2</a>
