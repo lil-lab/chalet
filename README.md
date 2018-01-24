@@ -8,7 +8,7 @@ Code will be released soon. Send an email to Dipendra Misra (dkm@cs.cornell.edu)
 Available Soon
 
 ## Project:
-_Developers_: Claudia Yan and Dipendra Misra
+_Developers_: Claudia Yan, Dipendra Misra, Aaron Walsman and Yonatan Bisk.
 
 _Researchers_: Dipendra Misra, Andrew Bennett, Aaron Walsman, Yonatan Bisk and Yoav Artzi
 
