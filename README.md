@@ -13,7 +13,8 @@ _Developers_: Claudia Yan, Dipendra Misra, Aaron Walsman and Yonatan Bisk.
 _Researchers_: Dipendra Misra, Andrew Bennett, Aaron Walsman, Yonatan Bisk and Yoav Artzi
 
 ## Publication:
-1) CHALET: Cornell House Agent Learning Environment, _Claudia Yan, Dipendra Misra, Andrew Bennett, Aaron Walsman, Yonatan Bisk and Yoav Artzi_, arXiv report 2018 [https://arxiv.org/abs/1801.07357]
+1) Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction _Dipendra Misra, Andrew Bennett, Valts Blukis, Eyvind Niklasson, Max Shatkhin, and Yoav Artzi_, [EMNLP 2018](https://arxiv.org/abs/1809.00786)
+2) CHALET: Cornell House Agent Learning Environment, _Claudia Yan, Dipendra Misra, Andrew Bennett, Aaron Walsman, Yonatan Bisk and Yoav Artzi_, arXiv report 2018 [https://arxiv.org/abs/1801.07357]
 
 ## Youtube Demos: 
 <a href="https://youtu.be/FBirx-10JPE">Demo 1</a>
