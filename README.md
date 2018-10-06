@@ -6,8 +6,6 @@ An unstable release of CHALET executables is available here: https://cornell.box
 
 We will be relasing the source code soon. Send an email to Dipendra Misra (dkm@cs.cornell.edu) for more information.
 
-**Contributors:** Claudia Yan, Dipendra Misra, Aaron Walsman, Yonatan Bisk, Andrew Bennett, and Yoav Artzi. 
-
 ## Attribution:
 
 **Environment and Simulator:**  
