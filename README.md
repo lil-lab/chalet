@@ -11,10 +11,14 @@ We will be relasing the source code soon. Send an email to Dipendra Misra (dkm@c
 ## Attribution:
 
 **Environment and Simulator:**  
-CHALET: Cornell House Agent Learning Environment, _Claudia Yan, Dipendra Misra, Andrew Bennett, Aaron Walsman, Yonatan Bisk and Yoav Artzi_, arXiv report 2018 [https://arxiv.org/abs/1801.07357]
+CHALET: Cornell House Agent Learning Environment  
+_Claudia Yan, Dipendra Misra, Andrew Bennett, Aaron Walsman, Yonatan Bisk and Yoav Artzi_  
+[arXiv report 2018](https://arxiv.org/abs/1801.07357)
 
 **Instructional Data:**  
-Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction _Dipendra Misra, Andrew Bennett, Valts Blukis, Eyvind Niklasson, Max Shatkhin, and Yoav Artzi_, [EMNLP 2018](https://arxiv.org/abs/1809.00786)
+Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction  
+_Dipendra Misra, Andrew Bennett, Valts Blukis, Eyvind Niklasson, Max Shatkhin, and Yoav Artzi_  
+[EMNLP 2018](https://arxiv.org/abs/1809.00786)
 
 
 ## License:
