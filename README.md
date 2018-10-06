@@ -21,10 +21,6 @@ Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction _
 
 [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 
-## Live Demo: 
-https://tinyurl.com/chalet3d-cornell
-
-
 ## Youtube Demos: 
 <a href="https://youtu.be/FBirx-10JPE">Demo 1</a>
 <a href="https://youtu.be/EpGS5606rn8">Demo 2</a>
