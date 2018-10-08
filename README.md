@@ -2,7 +2,12 @@
 
 CHALET is a 3D house simulator with support for navigation and manipulation. Unlike existing systems, CHALET supports both a wide range of object manipulation, as well as supporting complex environemnt layouts consisting of multiple rooms. The range of object manipulations includes the ability to pick up and place objects, toggle the state of objects like taps or televesions, open or close containers, and insert or remove objects from these containers. In addition, the simulator comes with 58 rooms that can be combined to create houses, including 10 default house layouts. CHALET is therefore suitable for setting up challenging environments for various AI tasks that require complex language understanding and planning, such as navigation, manipulation, instruction following, and interactive question answering.
 
-**The CHALET release will be available within days, please watch this space.**
+## Release:
+
+CHALET Version 0.1 is available for download at: http://clic.nlp.cornell.edu/resources/CHALET/ 
+Please see Wiki for details on how to use these builds.
+
+**The CHALET source code will be available within days, please watch this space.**
 
 For inquiries and issues, please contact us through the [issues section](https://github.com/clic-lab/chalet/issues) of the repository. 
 
