@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CHALET Standalone Test</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/stylesheets/clean-blog.min.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="assets/javascripts/jquery.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/javascripts/bootstrap.min.js"></script>
+    
+    <!-- Custom Theme JavaScript -->
+    <script src="assets/javascripts/clean-blog.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Page Header -->
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p><h3 style="text-align:center;">Test script for CHALET WebGL Standalone</h3></p>
+                        <p><h5 style="text-align:center;">Select a house from the dropdown and proceed.</h5></p>
+
+                        <div class="row" style="margin-left:1%">
+                            <p>
+                            
+                                <select id="scenarios_list">
+                                     <option value="house1_v5_110">House 1</option>
+                                     <option value="house2_v5_110">House 2</option>
+                                     <option value="house3_v5_110">House 3</option>
+                                     <option value="house4_v5_110">House 4</option>
+                                     <option value="house5_v5_110">House 5</option>
+                                </select>
+                            </p>
+                        </div>
+
+                        <div class="row" style="margin-left:1%">
+                              <button id="submit" class="btn btn-default">Proceed</button>
+                        </div>
+                        
+                        <script>
+      			            /*function post(path, params, method) {
+
+                                method = method || "post"; // Set method to post by default if not specified.
+
+                                // The rest of this code assumes you are not using a library.
+                                // It can be made less wordy if you use one.
+                                var form = document.createElement("form");
+                                form.setAttribute("method", method);
+                                form.setAttribute("action", path);
+
+                                for(var key in params) {
+                                    if(params.hasOwnProperty(key)) {
+                                        var hiddenField = document.createElement("input");
+                                        hiddenField.setAttribute("type", "hidden");
+                                        hiddenField.setAttribute("name", key);
+                                        hiddenField.setAttribute("value", params[key]);
+
+                                        form.appendChild(hiddenField);
+                                     }
+                                }
+
+                                document.body.appendChild(form);
+                                form.submit();
+                            }*/
+
+                            $('#submit').on('click', function (e) {
+
+                                var selected_house = $('#scenarios_list').val()
+                                window.location.href = "live_demo.html?val=" + selected_house
+                                // post('live_demo', {scenario: selected_house});
+                            });
+                        </script>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; Cornell Tech, Cornell University 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

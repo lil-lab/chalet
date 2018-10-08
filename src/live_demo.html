@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CHALET Standalone Test</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/javascripts/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/javascripts/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <script src="assets/javascripts/UnityProgress.js"></script>
+    <script src="assets/javascripts/UnityObject2.js"></script>
+</head>
+
+<body>
+    <!-- Main Content -->
+    <div class="container" style="margin-top:1%; margin-left:2%">
+        <div class="row">
+            <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+                    <div class="row">
+                        <p><b>CHALET: Cornell House Agent Learning Environment</b><br/>
+                        Wait for the house to load and then control the agent using the commands below:</p>
+                        <code> Use WASD to move and left click to interact with objects. Press Esc and drag the cursor<br/> outside the game to exit, and click the game window to enter. Press finish once you complete<br/> the task. Reload the page to restart. Do not press the back button. </code>
+                      <div class="template col-xs-8">
+                          <div class="template-wrap clear" style="display: block; height=500px; width=800px">
+                          <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+                          <br>
+                        </div>
+                        <script type='text/javascript'>
+            			     //disable alert.
+            			     window.alert = function() {};
+                             console.log("Location is " + window.location);
+                             var url = new URL(window.location);
+                             var house = url.searchParams.get("val");
+                             console.log("House is " + house);
+                             
+                             var Module = {
+                                TOTAL_MEMORY: 404750336,
+                                errorhandler: null,	    // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+                                compatibilitycheck: null,
+                                dataUrl: "chalet/Version-0.1/WebGL-Standalone/" + house + "/Release/" + house + ".data",
+                                codeUrl: "chalet/Version-0.1/WebGL-Standalone/" + house + "/Release/" + house + ".js",
+                                memUrl: "chalet/Version-0.1/WebGL-Standalone/" + house + "/Release/" + house + ".mem",
+                            };
+                            function loadjsfile(filename){
+                                var fileref=document.createElement('script')
+                                fileref.setAttribute("type","text/javascript");
+                                fileref.setAttribute("src", filename);
+                                document.getElementsByTagName("head")[0].appendChild(fileref);
+                            }
+                            loadjsfile("chalet/Version-0.1/WebGL-Standalone/" + house + "/Release/UnityLoader.js");
+                        </script>
+                     </div>
+                    </div>
+                       
+                      <script>
+      			            var start = new Date();
+    
+                            function post(path, params, method) {
+    
+                                method = method || "post"; // Set method to post by default if not specified.
+        
+                                // The rest of this code assumes you are not using a library.
+                                // It can be made less wordy if you use one.
+                                var form = document.createElement("form");
+                                form.setAttribute("method", method);
+                                form.setAttribute("action", path);
+        
+                                for(var key in params) {
+                                    if(params.hasOwnProperty(key)) {
+                                        var hiddenField = document.createElement("input");
+                                        hiddenField.setAttribute("type", "hidden");
+                                        hiddenField.setAttribute("name", key);
+                                        hiddenField.setAttribute("value", params[key]);
+        
+                                        form.appendChild(hiddenField);
+                                     }
+                                }
+        
+                                document.body.appendChild(form);
+                                form.submit();
+                            }
+                      
+                            function SayHello(arg) {
+                                // Receives the trajectory of the user from
+                                trajectory = "No-Traj";
+                                instruction1 = jQuery("textarea#instruction1").val();
+                                instruction2 = jQuery("textarea#instruction2").val();
+                                nstory = $("#story").html()
+                                    
+                                var end = new Date();
+                                var ntime_taken = end - start;
+                                    
+                                post('save', {name: '<%= session[:name]%>', inst1: instruction1, inst2: instruction2,
+                                     scenario: '<%= session[:scenario]%>', story: nstory, time_taken: ntime_taken, trajectory:trajectory});
+                            }
+                      
+                            $('#submit').on('click', function (e) {
+                                SendMessage("ImportantInformation", "BrowserToC", "No-Arg");
+                            });
+                            
+                            $('#instruction1').click(function(){
+                                SendMessage("WebGLInputManager", "DisableWebGLInput", "No-Arg");
+                            });
+                            
+                            $('#instruction2').click(function(){
+                                SendMessage("WebGLInputManager", "DisableWebGLInput", "No-Arg");
+                            });
+                            
+                            $('#canvas').click(function(){
+                                SendMessage("WebGLInputManager", "EnableWebGLInput", "No-Arg");
+                            });
+                            
+                            function WebGLLoaded() {
+                                $('#instructions').css("display", "block");
+                            }
+                      </script>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    
+    <!-- jQuery -->
+    <script src="assets/javascripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/javascripts/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="assets/javascripts/clean-blog.min.js"></script>
+
+</body>
+
+</html>
