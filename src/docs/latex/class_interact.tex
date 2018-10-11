@@ -1,0 +1,88 @@
+\hypertarget{class_interact}{}\section{Interact Class Reference}
+\label{class_interact}\index{Interact@{Interact}}
+
+
+Attached to player, player can interact with items in room that contain the tag \char`\"{}object\char`\"{}  
+
+
+Inheritance diagram for Interact\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_interact}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_interact_a00d52190f6c42bb20a5a81cead623c0f}{Shoot\+Ray} ()
+\begin{DoxyCompactList}\small\item\em Shoots out a Raycast if the player is not interacting with anything to look for an item to interact with. Otherwise stops any interactions AS long as the item won\textquotesingle{}t clip through a wall \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \hyperlink{class_interact_a77b739c7a3a440059f1d655871e609e7}{selected\+Item}
+\item 
+bool \hyperlink{class_interact_ac05d4c2cfb44a97362f395a41c2423f8}{greater\+Control}
+\item 
+\hyperlink{_interact_8cs_a09864dfb2acbb6d227a6c2f1b81e7d3d}{Interact\+States} \hyperlink{class_interact_afddad7ecedf48b20c8b01b0f37cc0c25}{current\+Action}
+\item 
+bool \hyperlink{class_interact_a6101651539a035a925e1b7c7b7277cb1}{got\+Movement\+Tip} = false
+\item 
+bool \hyperlink{class_interact_a612beec121bde3a51b455c12c992c04d}{got\+Hold\+Tip} = false
+\item 
+bool \hyperlink{class_interact_a573a72a394e3090b5c5101f09355440e}{got\+Interact\+Tip} = false
+\item 
+bool \hyperlink{class_interact_a49811c6723bd579aad39dcbaba8906c7}{got\+Drawer\+Tip} = false
+\item 
+bool \hyperlink{class_interact_abd10e3a65acb03851b3f135be25f8477}{got\+Cabinet\+Tip} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Attached to player, player can interact with items in room that contain the tag \char`\"{}object\char`\"{} 
+
+
+
+\subsection{Member Function Documentation}
+\index{Interact@{Interact}!Shoot\+Ray@{Shoot\+Ray}}
+\index{Shoot\+Ray@{Shoot\+Ray}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{Shoot\+Ray()}{ShootRay()}}]{\setlength{\rightskip}{0pt plus 5cm}void Interact.\+Shoot\+Ray (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_interact_a00d52190f6c42bb20a5a81cead623c0f}{}\label{class_interact_a00d52190f6c42bb20a5a81cead623c0f}
+
+
+Shoots out a Raycast if the player is not interacting with anything to look for an item to interact with. Otherwise stops any interactions AS long as the item won\textquotesingle{}t clip through a wall 
+
+
+
+\subsection{Member Data Documentation}
+\index{Interact@{Interact}!current\+Action@{current\+Action}}
+\index{current\+Action@{current\+Action}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{current\+Action}{currentAction}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interact\+States} Interact.\+current\+Action}\hypertarget{class_interact_afddad7ecedf48b20c8b01b0f37cc0c25}{}\label{class_interact_afddad7ecedf48b20c8b01b0f37cc0c25}
+\index{Interact@{Interact}!got\+Cabinet\+Tip@{got\+Cabinet\+Tip}}
+\index{got\+Cabinet\+Tip@{got\+Cabinet\+Tip}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{got\+Cabinet\+Tip}{gotCabinetTip}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interact.\+got\+Cabinet\+Tip = false}\hypertarget{class_interact_abd10e3a65acb03851b3f135be25f8477}{}\label{class_interact_abd10e3a65acb03851b3f135be25f8477}
+\index{Interact@{Interact}!got\+Drawer\+Tip@{got\+Drawer\+Tip}}
+\index{got\+Drawer\+Tip@{got\+Drawer\+Tip}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{got\+Drawer\+Tip}{gotDrawerTip}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interact.\+got\+Drawer\+Tip = false}\hypertarget{class_interact_a49811c6723bd579aad39dcbaba8906c7}{}\label{class_interact_a49811c6723bd579aad39dcbaba8906c7}
+\index{Interact@{Interact}!got\+Hold\+Tip@{got\+Hold\+Tip}}
+\index{got\+Hold\+Tip@{got\+Hold\+Tip}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{got\+Hold\+Tip}{gotHoldTip}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interact.\+got\+Hold\+Tip = false}\hypertarget{class_interact_a612beec121bde3a51b455c12c992c04d}{}\label{class_interact_a612beec121bde3a51b455c12c992c04d}
+\index{Interact@{Interact}!got\+Interact\+Tip@{got\+Interact\+Tip}}
+\index{got\+Interact\+Tip@{got\+Interact\+Tip}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{got\+Interact\+Tip}{gotInteractTip}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interact.\+got\+Interact\+Tip = false}\hypertarget{class_interact_a573a72a394e3090b5c5101f09355440e}{}\label{class_interact_a573a72a394e3090b5c5101f09355440e}
+\index{Interact@{Interact}!got\+Movement\+Tip@{got\+Movement\+Tip}}
+\index{got\+Movement\+Tip@{got\+Movement\+Tip}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{got\+Movement\+Tip}{gotMovementTip}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interact.\+got\+Movement\+Tip = false}\hypertarget{class_interact_a6101651539a035a925e1b7c7b7277cb1}{}\label{class_interact_a6101651539a035a925e1b7c7b7277cb1}
+\index{Interact@{Interact}!greater\+Control@{greater\+Control}}
+\index{greater\+Control@{greater\+Control}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{greater\+Control}{greaterControl}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interact.\+greater\+Control}\hypertarget{class_interact_ac05d4c2cfb44a97362f395a41c2423f8}{}\label{class_interact_ac05d4c2cfb44a97362f395a41c2423f8}
+\index{Interact@{Interact}!selected\+Item@{selected\+Item}}
+\index{selected\+Item@{selected\+Item}!Interact@{Interact}}
+\subsubsection[{\texorpdfstring{selected\+Item}{selectedItem}}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Object Interact.\+selected\+Item}\hypertarget{class_interact_a77b739c7a3a440059f1d655871e609e7}{}\label{class_interact_a77b739c7a3a440059f1d655871e609e7}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/3\+D Intern/\+Documents/\+Cornell\+Tech-\/\+Unity3\+D/\+Assets/\+Scripts/\+Player/\hyperlink{_interact_8cs}{Interact.\+cs}\end{DoxyCompactItemize}

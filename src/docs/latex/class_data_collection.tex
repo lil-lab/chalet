@@ -1,0 +1,79 @@
+\hypertarget{class_data_collection}{}\section{Data\+Collection Class Reference}
+\label{class_data_collection}\index{Data\+Collection@{Data\+Collection}}
+
+
+Attached to player, collects player data every second and when instructed, data is compiled into json format  
+
+
+Inheritance diagram for Data\+Collection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_data_collection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator \hyperlink{class_data_collection_aeafbb969c7d88168f64f48ee42b2051d}{Data\+Collector} ()
+\begin{DoxyCompactList}\small\item\em Coroutine for data collection at specified interval Data Collected\+: Player coordinates/rotations/action state/object being interacted with/objects position/rotation -\/ all collected with delegate \end{DoxyCompactList}\item 
+void \hyperlink{class_data_collection_aeb1fc2071face3f9b41aea7a81c9ea48}{Browser\+ToC} ()
+\begin{DoxyCompactList}\small\item\em A\+C\+C\+E\+SS T\+H\+IS F\+U\+N\+C\+T\+I\+ON F\+R\+OM B\+R\+O\+W\+S\+ER. sets done\+Recording to true and triggers the data compilation functions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_data_collection_a8af35a5b2260dd692601c715f188f0e3}{recording\+Time} = 0
+\item 
+List$<$ string $>$ \hyperlink{class_data_collection_a239a38e434c21993aa890a51e284b5cc}{data\+Strings} = new List$<$string$>$()
+\item 
+float \hyperlink{class_data_collection_a18ef2fb2993192dfefdcad5b110493a2}{coroutine\+Wait\+Time} = 1f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Attached to player, collects player data every second and when instructed, data is compiled into json format 
+
+
+
+\subsection{Member Function Documentation}
+\index{Data\+Collection@{Data\+Collection}!Browser\+ToC@{Browser\+ToC}}
+\index{Browser\+ToC@{Browser\+ToC}!Data\+Collection@{Data\+Collection}}
+\subsubsection[{\texorpdfstring{Browser\+To\+C()}{BrowserToC()}}]{\setlength{\rightskip}{0pt plus 5cm}void Data\+Collection.\+Browser\+ToC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_data_collection_aeb1fc2071face3f9b41aea7a81c9ea48}{}\label{class_data_collection_aeb1fc2071face3f9b41aea7a81c9ea48}
+
+
+A\+C\+C\+E\+SS T\+H\+IS F\+U\+N\+C\+T\+I\+ON F\+R\+OM B\+R\+O\+W\+S\+ER. sets done\+Recording to true and triggers the data compilation functions 
+
+\index{Data\+Collection@{Data\+Collection}!Data\+Collector@{Data\+Collector}}
+\index{Data\+Collector@{Data\+Collector}!Data\+Collection@{Data\+Collection}}
+\subsubsection[{\texorpdfstring{Data\+Collector()}{DataCollector()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerator Data\+Collection.\+Data\+Collector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_data_collection_aeafbb969c7d88168f64f48ee42b2051d}{}\label{class_data_collection_aeafbb969c7d88168f64f48ee42b2051d}
+
+
+Coroutine for data collection at specified interval Data Collected\+: Player coordinates/rotations/action state/object being interacted with/objects position/rotation -\/ all collected with delegate 
+
+\begin{DoxyReturn}{Returns}
+Appends to 6 data lists and also adds to recording time
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Data\+Collection@{Data\+Collection}!coroutine\+Wait\+Time@{coroutine\+Wait\+Time}}
+\index{coroutine\+Wait\+Time@{coroutine\+Wait\+Time}!Data\+Collection@{Data\+Collection}}
+\subsubsection[{\texorpdfstring{coroutine\+Wait\+Time}{coroutineWaitTime}}]{\setlength{\rightskip}{0pt plus 5cm}float Data\+Collection.\+coroutine\+Wait\+Time = 1f}\hypertarget{class_data_collection_a18ef2fb2993192dfefdcad5b110493a2}{}\label{class_data_collection_a18ef2fb2993192dfefdcad5b110493a2}
+\index{Data\+Collection@{Data\+Collection}!data\+Strings@{data\+Strings}}
+\index{data\+Strings@{data\+Strings}!Data\+Collection@{Data\+Collection}}
+\subsubsection[{\texorpdfstring{data\+Strings}{dataStrings}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Data\+Collection.\+data\+Strings = new List$<$string$>$()}\hypertarget{class_data_collection_a239a38e434c21993aa890a51e284b5cc}{}\label{class_data_collection_a239a38e434c21993aa890a51e284b5cc}
+\index{Data\+Collection@{Data\+Collection}!recording\+Time@{recording\+Time}}
+\index{recording\+Time@{recording\+Time}!Data\+Collection@{Data\+Collection}}
+\subsubsection[{\texorpdfstring{recording\+Time}{recordingTime}}]{\setlength{\rightskip}{0pt plus 5cm}int Data\+Collection.\+recording\+Time = 0}\hypertarget{class_data_collection_a8af35a5b2260dd692601c715f188f0e3}{}\label{class_data_collection_a8af35a5b2260dd692601c715f188f0e3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/3\+D Intern/\+Documents/\+Cornell\+Tech-\/\+Unity3\+D/\+Assets/\+Scripts/\+Data Collection/\hyperlink{_data_collection_8cs}{Data\+Collection.\+cs}\end{DoxyCompactItemize}

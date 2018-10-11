@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GDataDB</name>
+    </assembly>
+    <members>
+        <member name="T:GDataDB.IDatabase">
+            <summary>
+            Spreadsheet document
+            </summary>
+        </member>
+        <member name="M:GDataDB.IDatabase.CreateTable``1(System.String)">
+            <summary>
+            Creates a new worksheet in this document
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataDB.IDatabase.GetTable``1(System.String)">
+            <summary>
+            Gets an existing worksheet in this document.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name"></param>
+            <returns>Searched worksheet or null if not found</returns>
+        </member>
+        <member name="M:GDataDB.IDatabase.Delete">
+            <summary>
+            Deletes this spreadsheet document
+            </summary>
+        </member>
+        <member name="T:GDataDB.IDatabaseClient">
+            <summary>
+            Google spreadsheet service entry point
+            </summary>
+        </member>
+        <member name="M:GDataDB.IDatabaseClient.CreateDatabase(System.String)">
+            <summary>
+            Creates a new <see cref="T:GDataDB.IDatabase"/> (spreadsheet document)
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataDB.IDatabaseClient.GetDatabase(System.String)">
+            <summary>
+            Gets an existing <see cref="T:GDataDB.IDatabase"/> (spreadsheet document)
+            </summary>
+            <param name="name"></param>
+            <returns>IDocument instance or null if not found</returns>
+        </member>
+        <member name="T:GDataDB.IRow`1">
+            <summary>
+            Row in the spreadsheet
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GDataDB.IRow`1.Update">
+            <summary>
+            Updates the row in the spreadsheet using the current <see cref="P:GDataDB.IRow`1.Element"/>
+            </summary>
+        </member>
+        <member name="M:GDataDB.IRow`1.Delete">
+            <summary>
+            Deletes this row
+            </summary>
+        </member>
+        <member name="P:GDataDB.IRow`1.Element">
+            <summary>
+            Element stored in the row
+            </summary>
+        </member>
+        <member name="T:GDataDB.ITable`1">
+            <summary>
+            Worksheet in a spreadsheet document
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GDataDB.ITable`1.Delete">
+            <summary>
+            Deletes this worksheet
+            </summary>
+        </member>
+        <member name="M:GDataDB.ITable`1.Clear">
+            <summary>
+            Deletes all rows in this worksheet.
+            This operation is not atomic.
+            </summary>
+        </member>
+        <member name="M:GDataDB.ITable`1.Rename(System.String)">
+            <summary>
+            Renames this worksheet
+            </summary>
+            <param name="newName"></param>
+        </member>
+        <member name="M:GDataDB.ITable`1.Add(`0)">
+            <summary>
+            Adds a new row
+            </summary>
+            <param name="e">Object to store</param>
+            <returns>Row stored</returns>
+        </member>
+        <member name="M:GDataDB.ITable`1.Get(System.Int32)">
+            <summary>
+            Gets a row by index number
+            </summary>
+            <param name="rowNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataDB.ITable`1.FindAll">
+            <summary>
+            Gets all stored rows in this worksheet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GDataDB.ITable`1.FindAll(System.Int32,System.Int32)">
+            <summary>
+            Gets all stored rows in this worksheet, paged
+            </summary>
+            <param name="start"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataDB.ITable`1.Find(System.String)">
+            <summary>
+            Free text row search
+            </summary>
+            <param name="query">text to search</param>
+            <returns>Matching rows</returns>
+        </member>
+        <member name="M:GDataDB.ITable`1.FindStructured(System.String)">
+            <summary>
+            Searches rows using a structured query
+            Syntax: http://code.google.com/apis/spreadsheets/data/2.0/reference.html#ListParameters
+            </summary>
+            <param name="query">structured query</param>
+            <returns>Matching rows</returns>
+        </member>
+        <member name="M:GDataDB.ITable`1.FindStructured(System.String,System.Int32,System.Int32)">
+            <summary>
+            Searches rows using a structured query, paged
+            Syntax: http://code.google.com/apis/spreadsheets/data/2.0/reference.html#ListParameters
+            </summary>
+            <param name="query"></param>
+            <param name="start"></param>
+            <param name="count"></param>
+            <returns>Matching rows</returns>
+        </member>
+        <member name="M:GDataDB.ITable`1.Find(GDataDB.Query)">
+            <summary>
+            Searches rows
+            </summary>
+            <param name="q">query parameters</param>
+            <returns>Matching rows</returns>
+        </member>
+        <member name="T:GDataDB.Linq.Impl.Evaluator">
+            <summary>
+            From http://blogs.msdn.com/mattwar/archive/2007/08/01/linq-building-an-iqueryable-provider-part-iii.aspx
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GDataDB.Linq.Impl.Evaluator.PartialEval(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Boolean})" -->
+        <!-- Badly formed XML comment ignored for member "M:GDataDB.Linq.Impl.Evaluator.PartialEval(System.Linq.Expressions.Expression)" -->
+        <!-- Badly formed XML comment ignored for member "T:GDataDB.Linq.Impl.Evaluator.SubtreeEvaluator" -->
+        <member name="T:GDataDB.Linq.Impl.ExpressionVisitor">
+            <summary>
+            From http://blogs.msdn.com/mattwar/archive/2007/07/31/linq-building-an-iqueryable-provider-part-ii.aspx
+            </summary>
+        </member>
+        <member name="T:GDataDB.Linq.Impl.Evaluator.Nominator">
+            <summary>
+            Performs bottom-up analysis to determine which nodes can possibly
+            be part of an evaluated sub-tree.
+            </summary>
+        </member>
+        <member name="T:GDataDB.Linq.Impl.QueryProvider">
+            <summary>
+            From http://blogs.msdn.com/mattwar/archive/2007/07/30/linq-building-an-iqueryable-provider-part-i.aspx
+            </summary>
+        </member>
+        <member name="T:GDataDB.Linq.Impl.Query`1">
+            <summary>
+            From http://blogs.msdn.com/mattwar/archive/2007/07/30/linq-building-an-iqueryable-provider-part-i.aspx
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:GDataDB.Linq.Impl.TypeSystem">
+            <summary>
+            From http://blogs.msdn.com/mattwar/archive/2007/07/30/linq-building-an-iqueryable-provider-part-i.aspx
+            </summary>
+        </member>
+        <member name="T:GDataDB.Order">
+            <summary>
+            Sort order
+            </summary>
+        </member>
+        <member name="T:GDataDB.Query">
+            <summary>
+            Query parameters
+            </summary>
+        </member>
+        <member name="P:GDataDB.Query.Start">
+            <summary>
+            Start index, for paging
+            </summary>
+        </member>
+        <member name="P:GDataDB.Query.Count">
+            <summary>
+            Record count to fetch, for paging
+            </summary>
+        </member>
+        <member name="P:GDataDB.Query.FreeQuery">
+            <summary>
+            Free text query
+            </summary>
+        </member>
+        <member name="P:GDataDB.Query.StructuredQuery">
+            <summary>
+            Structured query
+            </summary>
+        </member>
+        <member name="P:GDataDB.Query.Order">
+            <summary>
+            Sort order
+            </summary>
+        </member>
+        <member name="T:GDataDB.Impl.Serializer`1">
+            <summary>
+            (de)serializes an object into a spreadsheet row
+            Uses only the object properties.
+            Property names are used as column names in the spreadsheet
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+    </members>
+</doc>

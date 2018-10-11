@@ -1,0 +1,11 @@
+When users interact with the environment, then trace of their activity is stored.
+This is used for datacollection and visualizing user activity. Following is the format
+in which trajectory is stored.
+
+Trajectory Format
+
+1. Navigation:  
+2. Picking up objects:
+3. Placing objects:
+4. Opening drawers of objects:
+5. Click based actions (clicking on tap, cursor, stove):
