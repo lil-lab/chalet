@@ -6,9 +6,9 @@ CHALET is a 3D house simulator with support for navigation and manipulation. Unl
 
 CHALET Version 0.1 is available for download at: http://clic.nlp.cornell.edu/resources/CHALET/ 
 
-Please see Wiki for details on how to use these builds.
+An unstable version of the CHALET source code is now available.
 
-**The CHALET source code will be available within days, please watch this space.**
+Please see the Wiki for details on how to use these builds and the source code.
 
 For inquiries and issues, please contact us through the [issues section](https://github.com/clic-lab/chalet/issues) of the repository. 
 
