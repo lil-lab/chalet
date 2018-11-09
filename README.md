@@ -14,7 +14,7 @@ For support and issues, please contact us through the [issues section](https://g
 
 ### Source Code
 
-The CHALET source code is relseaed without porprietry assets purcahsed from the Unity Asset Store. These assets are required to work with the original source, but not with the released binaries. We extensively modified the resources for CHALET. If you wish to work with the source code, please contact us (chalet-3d@googlegroups.com) for instruction on obtaining the required resources. See more details in the [wiki](https://github.com/clic-lab/chalet/wiki). 
+The CHALET source code is released without proprietary assets purcahsed from the Unity Asset Store. These assets are required to work with the original source, but not with the released binaries. We extensively modified the resources for CHALET. If you wish to work with the source code, please contact us (chalet-3d@googlegroups.com) for instruction on obtaining the required resources. See more details in the [wiki](https://github.com/clic-lab/chalet/wiki). 
 
 ## Attribution
 
