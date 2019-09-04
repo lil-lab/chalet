@@ -14,7 +14,7 @@ For support and issues, please contact us through the [issues section](https://g
 
 ## Data
 
-CHALET has a large corpus of natural language instructions paired with human demonstrations. The corpus is available [here](http://lil.nlp.cornell.edu/resources/Misra-EMNLP-2018/Dataset_and_Simulators/data/house/). The corpus was published by [Misra et al. 2018](http://www.cs.cornell.edu/~dkm/papers/mbbnsa-emnlp.2018.pdf), and includes over 12K single instructions and 1.5K instruction paragraphs. 
+CHALET has a large corpus of natural language instructions paired with human demonstrations. The corpus is available [here](http://lil.nlp.cornell.edu/resources/Misra-EMNLP-2018/Dataset_and_Simulators/data/house/). The corpus was published by [Misra et al. 2018](http://www.cs.cornell.edu/~dkm/papers/mbbnsa-emnlp.2018.pdf), and includes over 12K single instructions and 1.5K instruction paragraphs. Baselines and code are availazble in the [CIFF repository](https://github.com/lil-lab/ciff). 
 
 ## Source Code
 
