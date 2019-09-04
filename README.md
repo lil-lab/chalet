@@ -12,7 +12,11 @@ Please see the Wiki for details on how to use these builds and the source code.
 
 For support and issues, please contact us through the [issues section](https://github.com/clic-lab/chalet/issues) of the repository. 
 
-### Source Code
+## Data
+
+CHALET has a large corpus of natural language instructions paired with human demonstrations. The corpus is available [here](http://lil.nlp.cornell.edu/resources/Misra-EMNLP-2018/Dataset_and_Simulators/data/house/). The corpus was published by [Misra et al. 2018](http://www.cs.cornell.edu/~dkm/papers/mbbnsa-emnlp.2018.pdf), and includes over 12K single instructions and 1.5K instruction paragraphs. 
+
+## Source Code
 
 The CHALET source code is released without proprietary assets purcahsed from the Unity Asset Store. These assets are required to work with the original source, but not with the released binaries. We extensively modified the resources for CHALET. If you wish to work with the source code, please contact us (chalet-3d@googlegroups.com) for instruction on obtaining the required resources. See more details in the [wiki](https://github.com/clic-lab/chalet/wiki). 
 
